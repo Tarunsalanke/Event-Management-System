@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Add a New Event</h1>
+    <form action="/add_event" method="POST">
+        <label for="EventName">Event Name:</label><br>
+        <input type="text" id="EventName" name="EventName" required><br><br>
+        
+        <label for="EventDate">Event Date:</label><br>
+        <input type="date" id="EventDate" name="EventDate" required><br><br>
+        
+        <label for="EventTime">Event Time:</label><br>
+        <input type="time" id="EventTime" name="EventTime" required><br><br>
+        
+        <label for="VenueID">Venue ID:</label><br>
+        <input type="number" id="VenueID" name="VenueID" required><br><br>
+        
+        <label for="OrganizerID">Organizer ID:</label><br>
+        <input type="number" id="OrganizerID" name="OrganizerID" required><br><br>
+        
+        <input type="submit" value="Add Event">
+    </form>
+</body>
+</html>

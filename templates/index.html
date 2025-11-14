@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Event Management System</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('add_venue') }}">Add Venue</a></li>
+            <li><a href="{{ url_for('view_venues') }}">View Venues</a></li>
+            <li><a href="{{ url_for('add_event') }}">Add Event</a></li>
+            <li><a href="{{ url_for('view_events') }}">View Events</a></li>
+            <li><a href="{{ url_for('add_participant') }}">Add Participant</a></li>
+            <li><a href="{{ url_for('view_participants') }}">View Participants</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

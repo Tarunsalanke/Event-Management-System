@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Participants</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>List of Participants</h1>
+    <table border="1">
+        <tr>
+            <th>Participant ID</th>
+            <th>Participant Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        {% for participant in participants %}
+        <tr>
+            <td>{{ participant.ParticipantID }}</td>
+            <td>{{ participant.ParticipantName }}</td>
+            <td>{{ participant.Email }}</td>
+            <td>{{ participant.Phone }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

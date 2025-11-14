@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Venue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Add a New Venue</h1>
+    <form action="/add_venue" method="POST">
+        <label for="VenueName">Venue Name:</label><br>
+        <input type="text" id="VenueName" name="VenueName" required><br><br>
+        
+        <label for="Location">Location:</label><br>
+        <input type="text" id="Location" name="Location" required><br><br>
+        
+        <label for="Capacity">Capacity:</label><br>
+        <input type="number" id="Capacity" name="Capacity" required><br><br>
+        
+        <input type="submit" value="Add Venue">
+    </form>
+</body>
+</html>
